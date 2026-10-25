@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: math/eratos.py
 
 from collections import Counter
 class Eratos:

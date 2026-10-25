@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: tree/euler_tour.py
 
 class EulerTour:
     """n >= 1、頂点番号 0..n-1 の無向木を扱う。

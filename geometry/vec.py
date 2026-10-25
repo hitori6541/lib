@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: geometry/vec.py
 
 import math
 class Vec:

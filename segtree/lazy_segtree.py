@@ -1,5 +1,8 @@
-# cheat sheat -> 
+# Source: https://github.com/hitori6541/lib
+# File: segtree/lazy_segtree.py
+# cheat sheet: segtree/monoid4lazysegtree.md
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/lazysegtree.py
+
 class LazySegtree:    
     def __init__(self, V, OP, E, MAPPING, COMPOSITION, ID):
         self.n = len(V)

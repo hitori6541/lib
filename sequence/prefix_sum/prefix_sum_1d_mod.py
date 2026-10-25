@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: sequence/prefix_sum/prefix_sum_1d_mod.py
 
 class PrefixSum1DMod:
     def __init__(self,list_:list,mod=998244353):

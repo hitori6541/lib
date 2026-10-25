@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: sequence/lis.py
 
 import bisect
 def lis(seq):

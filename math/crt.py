@@ -1,6 +1,9 @@
+# Source: https://github.com/hitori6541/lib
+# File: math/crt.py
 # shakayami: https://atcoder.github.io/ac-library/production/document_ja/math.html
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/acl_math.py
 # TODO: クラス化
+
 def inv_gcd(a, b):
     a = a % b
     if a == 0:

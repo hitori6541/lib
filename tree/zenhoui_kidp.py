@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: tree/zenhoui_kidp.py
 # https://qiita.com/Kiri8128/items/a011c90d25911bdb3ed3
 # https://atcoder.jp/contests/njpc2017/submissions/70197832
 

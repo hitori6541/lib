@@ -1,4 +1,7 @@
+# Source: https://github.com/hitori6541/lib
+# File: data_structure/bit_set.py
 # submit: https://atcoder.jp/contests/abc147/submissions/73870031
+
 class BitSet:    
     def __init__(self, offset: int):
         #offset := abs(絶対値が一番大きい負の値)

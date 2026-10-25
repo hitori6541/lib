@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: sequence/imos.py
 
 class Imos1D:
     def __init__(self, list_: list[int]):

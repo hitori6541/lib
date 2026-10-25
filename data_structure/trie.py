@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: data_structure/trie.py
 
 from collections import deque
 class Trie:

@@ -1,7 +1,6 @@
-# Source: https://github.com/<username>/<repository>
+# Source: https://github.com/hitori6541/lib
 # File: data_structure/interval_set.py
-# いい感じの文
-# https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py
+# 使う: https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py
 # TODO: 軽量化
 
 # region SortedSet
@@ -157,6 +156,7 @@ class SortedSet(Generic[T]):
 
 # endregion
 
+# region IntervalSet
 class IntervalSet():
     """
     manage intervals [l,r)
@@ -243,3 +243,4 @@ class IntervalSet():
     def contains(self, x):
         _, r = self.data.le((x, self.inf))
         return x < r
+# endregion

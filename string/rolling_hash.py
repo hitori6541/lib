@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: string/rolling_hash.py
 
 import random
 from collections import deque

@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: geometry/line.py
 # https://atcoder.jp/contests/abc467/tasks/abc467_d
 
 from math import gcd

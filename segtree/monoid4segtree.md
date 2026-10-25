@@ -1,5 +1,8 @@
 # Segtree モノイド集
 
+> **Source:** https://github.com/hitori6541/lib  
+> **File:** `segtree/monoid4segtree.md`
+
 ## 目次
 
 - [Sum and prefix minimum](#sum-and-prefix-minimum)

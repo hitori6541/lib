@@ -1,15 +1,20 @@
 # LazySegtree モノイド集
 
+> **Source:** https://github.com/hitori6541/lib  
+> **File:** `segtree/monoid4lazysegtree.md`
+
 ## 目次
 
-- [General](#general)
-- [RangeAdd_RangeMin](#rangeadd_rangemin)
-- [RangeAdd_RangeSum (packedint)](#rangeadd_rangesum-packedint)
-- [RangeAdd_RangeSum (tuple)](#rangeadd_rangesum-tuple)
-- [RangeLet_RangeMin](#rangelet_rangemin)
-- [RangeLet_RangeSum (tuple)](#rangelet_rangesum-tuple)
-- [RangeAdd_RangeSquareSum (cnt, sum, squaresum)](#rangeadd_rangesquaresum-cnt-sum-squaresum)
-- [RangeAffine_RangeSum (tuple)](#rangeaffine_rangesum-tuple)
+- [LazySegtree モノイド集](#lazysegtree-モノイド集)
+  - [目次](#目次)
+  - [General](#general)
+  - [RangeAdd\_RangeMin](#rangeadd_rangemin)
+  - [RangeAdd\_RangeSum (packedint)](#rangeadd_rangesum-packedint)
+  - [RangeAdd\_RangeSum (tuple)](#rangeadd_rangesum-tuple)
+  - [RangeLet\_RangeMin](#rangelet_rangemin)
+  - [RangeLet\_RangeSum (tuple)](#rangelet_rangesum-tuple)
+  - [RangeAdd\_RangeSquareSum (cnt, sum, squaresum)](#rangeadd_rangesquaresum-cnt-sum-squaresum)
+  - [RangeAffine\_RangeSum (tuple)](#rangeaffine_rangesum-tuple)
 
 ## General
 

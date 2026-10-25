@@ -1,3 +1,6 @@
+# Source: https://github.com/hitori6541/lib
+# File: segtree/segtree.py
+# cheat sheet: segtree/monoid4segtree.md
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/segtree.py
 # shakayami: https://github.com/shakayami/ACL-for-python/wiki/segtree
 

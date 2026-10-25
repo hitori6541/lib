@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: sequence/merge_sort.py
 
 def merge_sorted(a:list, cmp:callable, reverse=False):
     """

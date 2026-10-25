@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: sequence/prefix_sum/prefix_sum_nd.py
 
 class PrefixSumND:
     def __init__(self, length: list[int]):

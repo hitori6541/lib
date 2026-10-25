@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: math/ext_gcd.py
 
 import sys; sys.setrecursionlimit(10**6)
 def ext_gcd(a,b):

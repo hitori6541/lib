@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: segtree/fenwick_tree.py
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/fenwicktree.py
 # shakayami: https://github.com/shakayami/ACL-for-python/wiki/fenwicktree
 

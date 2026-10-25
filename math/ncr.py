@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: math/ncr.py
 
 """
 困ったときに見るやつ

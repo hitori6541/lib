@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: graph/max_flow.py
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/maxflow.py
 # shakayami: https://github.com/shakayami/ACL-for-python/wiki/maxflow
 # yosupo: https://yosupo.hatenablog.com/entry/2015/03/31/134336

@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: geometry/henkakusort.py
 # https://blog.ngtkana.com/entry/2021/11/13/202103
 # functoolsは遅いので、自前ソートを使うと吉 -> sequence/merge_sort.py
 

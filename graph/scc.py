@@ -1,4 +1,7 @@
+# Source: https://github.com/hitori6541/lib
+# File: graph/scc.py
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/scc.py
+
 class SCC:
     """
     0-indexed 有向グラフの強連結成分分解。

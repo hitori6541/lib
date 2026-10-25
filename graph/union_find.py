@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: graph/union_find.py
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/dsu.py
 
 class UnionFind:

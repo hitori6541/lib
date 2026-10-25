@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: sequence/zaatu.py
 
 class Zaatu:
     def __init__(self, REV = False, OFFSET = 0):

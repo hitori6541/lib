@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: segtree/fenwick_tree_rars.py
 # Adapted from shakayami's ACL-for-python with AI assistance.
 
 class RangeAddFenwickTree:
