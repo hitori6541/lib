@@ -1,0 +1,24 @@
+# Pythonの生成ファイル
+__pycache__/
+*.py[cod]
+
+# 非公開ライブラリ（CATALOG.mdで公開 x）
+/data_structure/sorted_multiset.py
+/data_structure/sorted_set.py
+/data_structure/sparse_table.py
+/data_structure/swag.py
+/data_structure/wavelet_matrix.py
+/geometry/totsuhou.py
+/graph/bipartite_matching.py
+/graph/cycle_detect.py
+/graph/union_find_linear.py
+/graph/union_find_weighted.py
+/segtree/segtree_beats.py
+/sequence/mo.py
+/tree/cartesian_tree.py
+/tree/heavy_light_decomposition.py
+
+# ローカル管理用ファイル
+/AGENTS.md
+/HUMAN.md
+/INDEX.md
