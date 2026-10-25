@@ -41,13 +41,14 @@ def cmp_arg_negpi(p: tuple[int, int], q: tuple[int, int]):
     return (z < 0) - (z > 0)
 
 """
-# 一応使用例
+# 一応使用例 ラッパーを何回も生成すると遅いらしい(->"点のソート")
 from functools import cmp_to_key
 n = int(input())
 points = [tuple(map(int, input().split())) for _ in range(n)]
 
 # 点のソート
-points.sort(key=cmp_to_key(cmp_arg))
+key=cmp_to_key(cmp_arg)
+points.sort(key=key)
 
 # 添え字のソート
 order = sorted(
