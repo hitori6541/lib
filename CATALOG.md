@@ -18,6 +18,8 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [memo_geo.md](geometry/memo_geo.md) | o |  |
+| [affine_2D.py](geometry/affine_2D.py) | o |  |
 | [henkakusort.py](geometry/henkakusort.py) | o | https://blog.ngtkana.com/entry/2021/11/13/202103 |
 | [line.py](geometry/line.py) | o | AI |
 | [totsuhou.py](geometry/totsuhou.py) | x | https://en.wikibooks.org/wiki/Algorithm_Implementation/Geometry/Convex_hull/Monotone_chain |
@@ -39,6 +41,7 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [memo_bit_tricks.md](math/memo_bit_tricks.md) | o |  |
 | [crt.py](math/crt.py) | o | https://github.com/shakayami/ACL-for-python/blob/master/acl_math.py |
 | [eratos.py](math/eratos.py) | o | AI |
 | [ext_gcd.py](math/ext_gcd.py) | o | AI |
@@ -86,6 +89,7 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [find_jushin.py](tree/find_jushin.py) | o | https://atcoder.jp/contests/abc291/editorial/5840 |
 | [cartesian_tree.py](tree/cartesian_tree.py) | x | https://judge.yosupo.jp/submission/143878 |
 | [euler_tour.py](tree/euler_tour.py) | o | AI |
 | [heavy_light_decomposition.py](tree/heavy_light_decomposition.py) | x | https://judge.yosupo.jp/submission/213447 |
@@ -100,3 +104,5 @@
 | [HUMAN.md](HUMAN.md) | x | |
 | [CATALOG.md](CATALOG.md) | o | |
 | [INDEX.md](INDEX.md) | x | ローカル用のファイル一覧 |
+| [TODO.md](TODO.md) | x | 人間向けの整備タスク |
+| [DIARY.md](DIARY.md) | x | 人間向けの整備記録 |
