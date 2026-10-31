@@ -37,6 +37,9 @@ https://37zigen.com/exponential-generating-function/
 A(x) = sum(a^n * x^n / n!) = e^ax  :辺々微分するとどちらもa倍になる
 coshx, sinhxの形にすると偶/奇だけ取り出せる
 k![x^k]e^ak = a^k
+
+# 累積和
+1-xで割る
 """
 
 class FFT:
@@ -243,14 +246,13 @@ def fps_sparse_prod(f:list, g:dict, deg = -1, mod = 998244353):
             h[k] = (h[k] + f[i] * aj) % mod
     return h
 
-fft = FFT(998244353)
-def bostan_mori(p:list, q:list, k:int, fft:FFT) -> int:
+def bostan_mori(p:list, q:list, k:int, conv:callable, mod) -> int:
+    # conv = FFT(998244353).convolution
     """
     get [x^k] p(x)/q(x)
-    len(p) < len(q); q[0] == 1; mod == fft.mod
-    メインで fft = FFT(998244353)しといて、fftを引数として渡した
+    len(p) < len(q); q[0] == 1
+    conv(a,b) -> a*b
     """
-    mod = fft.mod
     def trim(a):
         while len(a) > 1 and a[-1] == 0: a.pop()
         return a
@@ -265,8 +267,8 @@ def bostan_mori(p:list, q:list, k:int, fft:FFT) -> int:
 
     while k:
         q1 = [-qi%mod if i%2 else qi for i,qi in enumerate(q)]
-        pq = fft.convolution(p,q1)
-        qq = fft.convolution(q,q1)
+        pq = conv(p,q1)
+        qq = conv(q,q1)
         p = pq[1::2] if k&1 else pq[0::2]
         q = qq[0::2]
         k >>= 1
