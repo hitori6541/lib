@@ -1,6 +1,6 @@
 # Source: https://github.com/hitori6541/lib
 # File: geometry/line.py
-# https://atcoder.jp/contests/abc467/tasks/abc467_d
+# submit: https://atcoder.jp/contests/abc467/submissions/80536497
 
 from math import gcd
 class Line2D:    

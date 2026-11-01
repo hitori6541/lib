@@ -1,6 +1,8 @@
 # Source: https://github.com/hitori6541/lib
 # File: segtree/fenwick_tree_rars.py
 # Adapted from shakayami's ACL-for-python with AI assistance.
+# Original repository: https://github.com/shakayami/ACL-for-python
+# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
 
 class RangeAddFenwickTree:
     """

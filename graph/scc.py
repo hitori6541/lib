@@ -1,6 +1,7 @@
 # Source: https://github.com/hitori6541/lib
 # File: graph/scc.py
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/scc.py
+# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
 
 class SCC:
     """

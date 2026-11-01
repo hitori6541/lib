@@ -1,11 +1,11 @@
 # Source: https://github.com/hitori6541/lib
 # File: sequence/prefix_sum/prefix_sum_nd.py
+# submit: https://atcoder.jp/contests/abc465/submissions/77234011
 
 class PrefixSumND:
     def __init__(self, length: list[int]):
         """N次元累積和 (l+1)の総積ぶんメモリつかう
         ABC465-F Sjeltzer?
-        https://atcoder.jp/contests/abc465/submissions/77234011
         """
         assert len(length) > 0
         assert all(l > 0 for l in length)

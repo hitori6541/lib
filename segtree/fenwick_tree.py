@@ -1,6 +1,7 @@
 # Source: https://github.com/hitori6541/lib
 # File: segtree/fenwick_tree.py
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/fenwicktree.py
+# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
 # shakayami: https://github.com/shakayami/ACL-for-python/wiki/fenwicktree
 
 class FenwickTree:

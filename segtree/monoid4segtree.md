@@ -23,7 +23,7 @@ def op(a, b): return (a[0]+b[0], min(a[1], a[0]+b[1]))
 ```python
 """
 トロピカル min-plus
-https://atcoder.jp/contests/abc456/submissions/75478403
+submit: https://atcoder.jp/contests/abc456/submissions/75478403
 x:払ってない
 o:払った
 (x->x, x->o, o->x, o->o)
@@ -59,7 +59,7 @@ def matvec(a,x):
 ```python
 """
 bit演算を行列にのせる
-https://atcoder.jp/contests/aalc001/submissions/80203522
+submit: https://atcoder.jp/contests/aalc001/submissions/80203522
 演算*について、
 0*x = y0, ~0*x = y1 と定める
 M(x) = [~y0, ~y1

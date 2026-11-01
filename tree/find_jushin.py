@@ -7,7 +7,7 @@ def FindJushin(n:int, g:list[list], w:list):
     n:頂点数
     g:木の隣接リスト
     w:頂点の重みのリスト 全部1は普通の木 葉だけとかはこれで調整
-    https://atcoder.jp/contests/abc291/editorial/5840
+    参考: https://atcoder.jp/contests/abc291/editorial/5840
     重心の頂点番号を返す O(n)
     重心が2個あるケースもこの世にはあるけど、そのうちひとつを返す
     葉が重心になるとメイン側で壊れる可能性があるので、よく考える

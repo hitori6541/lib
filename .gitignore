@@ -11,12 +11,15 @@ __pycache__/
 /geometry/totsuhou.py
 /graph/bipartite_matching.py
 /graph/cycle_detect.py
+/graph/max_flow.py
 /graph/union_find_linear.py
 /graph/union_find_weighted.py
+/math/fft.py
 /segtree/segtree_beats.py
 /sequence/mo.py
 /tree/cartesian_tree.py
 /tree/heavy_light_decomposition.py
+/tree/zenhoui_kidp.py
 
 # ローカル管理用ファイル
 /AGENTS.md

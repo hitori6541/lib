@@ -2,6 +2,7 @@
 # File: segtree/lazy_segtree.py
 # cheat sheet: segtree/monoid4lazysegtree.md
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/lazysegtree.py
+# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
 
 class LazySegtree:    
     def __init__(self, V, OP, E, MAPPING, COMPOSITION, ID):

@@ -1,6 +1,8 @@
 # Source: https://github.com/hitori6541/lib
 # File: data_structure/interval_set.py
 # 使う: https://github.com/tatyam-prime/SortedSet/blob/main/SortedSet.py
+# Borrowed portion: SortedSet region below (tatyam-prime).
+# Original license: The Unlicense - https://github.com/tatyam-prime/SortedSet/blob/main/LICENSE
 # TODO: 軽量化
 
 # region SortedSet

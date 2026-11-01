@@ -1,7 +1,9 @@
 # Source: https://github.com/hitori6541/lib
 # File: segtree/persistent_segtree.py
 # Adapted from shakayami's ACL-for-python with AI assistance.
-# https://info.atcoder.jp/entry/algorithm_lectures/persistent_segment_tree
+# Original repository: https://github.com/shakayami/ACL-for-python
+# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
+# 参考: https://info.atcoder.jp/entry/algorithm_lectures/persistent_segment_tree
 
 class PersistentSegtree:
     """

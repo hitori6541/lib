@@ -1,6 +1,6 @@
 # Source: https://github.com/hitori6541/lib
 # File: geometry/henkakusort.py
-# https://blog.ngtkana.com/entry/2021/11/13/202103
+# 参考: https://blog.ngtkana.com/entry/2021/11/13/202103
 # functoolsは遅いので、自前ソートを使うと吉 -> sequence/merge_sort.py
 
 def cmp_arg_zero(p: tuple[int, int], q: tuple[int, int]):
@@ -20,7 +20,7 @@ def cmp_arg_zero(p: tuple[int, int], q: tuple[int, int]):
     return (z < 0) - (z > 0)
     
 def cmp_arg_negpi(p: tuple[int, int], q: tuple[int, int]):
-    # https://judge.yosupo.jp/submission/349420
+    # submit: https://judge.yosupo.jp/submission/349420
     # -pi < theta <= pi
     # pが小さい：-1
 

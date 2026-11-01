@@ -3,9 +3,9 @@
 
 """
 困ったときに見るやつ
-https://kanpurin.hatenablog.com/entry/2021/09/15/220913
-https://qiita.com/drken/items/f2ea4b58b0d21621bd51
-https://w.atwiki.jp/uwicoder/pages/2118.html
+参考: https://kanpurin.hatenablog.com/entry/2021/09/15/220913
+参考: https://qiita.com/drken/items/f2ea4b58b0d21621bd51
+参考: https://w.atwiki.jp/uwicoder/pages/2118.html
 """
 
 class Comb:

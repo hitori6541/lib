@@ -2,6 +2,7 @@
 # File: segtree/segtree.py
 # cheat sheet: segtree/monoid4segtree.md
 # shakayami: https://github.com/shakayami/ACL-for-python/blob/master/segtree.py
+# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
 # shakayami: https://github.com/shakayami/ACL-for-python/wiki/segtree
 
 class Segtree:
