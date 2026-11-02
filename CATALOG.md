@@ -48,7 +48,8 @@
 | [fft.py](math/fft.py) | x | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/convolution.py |
 | [fps_notes.md](math/fps_notes.md) | o | 母関数メモ・FPS補助関数 |
 | [matrix.py](math/matrix.py) | o | AI |
-| [ncr.py](math/ncr.py) | o | AI / 参考資料はコード内 |
+| [comb.py](math/comb.py) | o | AI / 参考資料はコード内 |
+| [comb_table.py](math/comb_table.py) | o | 自作 |
 
 ## segtree
 
