@@ -95,6 +95,7 @@
 | [cartesian_tree.py](tree/cartesian_tree.py) | x | https://judge.yosupo.jp/submission/143878 |
 | [euler_tour.py](tree/euler_tour.py) | o | AI |
 | [heavy_light_decomposition.py](tree/heavy_light_decomposition.py) | x | https://judge.yosupo.jp/submission/213447 |
+| [prufer_code.py](tree/prufer_code.py) | o | 自作 / 参考資料はコード内 / [提出](https://yukicoder.me/submissions/1196599) |
 | [zenhoui_kidp.py](tree/zenhoui_kidp.py) | x | [元記事](https://qiita.com/Kiri8128/items/a011c90d25911bdb3ed3)のコードを改変・再配布条件未確認 / [現行版の提出](https://atcoder.jp/contests/njpc2017/submissions/80536365) |
 
 ## root
