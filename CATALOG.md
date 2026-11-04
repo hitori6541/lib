@@ -34,7 +34,7 @@
 | [max_flow.py](graph/max_flow.py) | x | [実装元](https://github.com/shakayami/ACL-for-python/blob/master/maxflow.py) (Unlicense) / [解説メモの参照元](https://yosupo.hatenablog.com/entry/2015/03/31/134336) |
 | [scc.py](graph/scc.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/scc.py |
 | [union_find_linear.py](graph/union_find_linear.py) | x | https://zenn.dev/luna_moonlight/articles/d02d85532becd3 |
-| [union_find_weighted.py](graph/union_find_weighted.py) | x | https://at274.hatenablog.com/entry/2018/02/03/140504 |
+| [union_find_weighted.py](graph/union_find_weighted.py) | o | 自作 / AI |
 | [union_find.py](graph/union_find.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/dsu.py |
 
 ## math
