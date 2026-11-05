@@ -161,6 +161,19 @@ assert ug.solve_minimize(0, 2) == "-inf"
 | `solve_maximize_dijkstra(s, t)` | `solve_minimize_dijkstra(s, t)` | 変換後の全辺が非負 |
 | `solve_maximize_dag_dp(s, t)` | `solve_minimize_dag_dp(s, t)` | 変換後のグラフ全体がDAG |
 
+距離配列を使う場合は、始点を指定して次のメソッドを呼ぶ。
+
+```python
+dist = ug.dist_bellman_ford(0)  # [0, 3, 7]
+dist = ug.dist_dijkstra(0)     # 全辺非負の場合
+dist = ug.dist_dag_dp(0)       # DAGの場合（負辺可）
+```
+
+返り値は始点から全頂点への最短距離のリストで、未到達は `10**18`。
+呼び出しごとに新しいリストを返し、クラスには保持しない。制約追加前に取得したリストは、追加前の結果のまま残る。
+各方式の使用条件・例外・計算量は対応するsolveと同じで、solveも内部でこれらを呼ぶ。
+最小化のsolveは `t` を始点に探索し、`s` の距離の符号を反転する。
+
 どの方式も `x[t] - x[s]` を最適化する。有限なら `int`、非有界なら文字列 `"inf"` / `"-inf"`。
 矛盾した制約でsolveすると `ValueError`。Dijkstra版は負辺がある場合、DAG DP版は閉路がある場合も `ValueError`。
 例外を処理しなければAtCoderではREになる。

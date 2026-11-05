@@ -7,6 +7,7 @@ from heapq import heappop, heappush
 class UshiGame:
     """整数の差分制約。頂点は0始まり、追加の引数順は(j, i, c)。
 
+    dist_*(s)はs始点の最短距離配列を返す。未到達は10**18。
     solve_*はx[t] - x[s]を最適化する。
     有限ならint、非有界なら文字列"inf" / "-inf"を返す。
     矛盾ならValueError。Dijkstraは負辺、DAG DPは閉路もValueError。
@@ -71,6 +72,10 @@ class UshiGame:
         return self.solve_minimize_bellman_ford(s, t)
 
     def solve_maximize_bellman_ford(self, s, t):
+        dist = self.dist_bellman_ford(s)
+        return "inf" if dist[t] == 10**18 else dist[t]
+
+    def dist_bellman_ford(self, s):
         """一般グラフ用。全体の矛盾判定込みでO(N + NM)。"""
         if not self.is_valid():
             raise ValueError("inconsistent constraints")
@@ -86,13 +91,17 @@ class UshiGame:
                     updated = True
             if not updated:
                 break
-        return "inf" if dist[t] == 10**18 else dist[t]
+        return dist
 
     def solve_minimize_bellman_ford(self, s, t):
         value = self.solve_maximize_bellman_ford(t, s)
         return "-inf" if value == "inf" else -value
 
     def solve_maximize_dijkstra(self, s, t):
+        dist = self.dist_dijkstra(s)
+        return "inf" if dist[t] == 10**18 else dist[t]
+
+    def dist_dijkstra(self, s):
         """変換後の全辺が非負の場合のみ。O(N + M log(M + 2))。"""
         if self._has_negative:
             raise ValueError("Dijkstra requires nonnegative edges")
@@ -109,7 +118,7 @@ class UshiGame:
                 if dist[j] > nd:
                     dist[j] = nd
                     heappush(heap, (nd, j))
-        return "inf" if dist[t] == 10**18 else dist[t]
+        return dist
 
     def solve_minimize_dijkstra(self, s, t):
         value = self.solve_maximize_dijkstra(t, s)
@@ -137,6 +146,10 @@ class UshiGame:
         return order
 
     def solve_maximize_dag_dp(self, s, t):
+        dist = self.dist_dag_dp(s)
+        return "inf" if dist[t] == 10**18 else dist[t]
+
+    def dist_dag_dp(self, s):
         """DAG用（負辺可）。全体のDAG判定込みでO(N + M)。"""
         order = self._topological_order()
         dist = [10**18] * self.n
@@ -147,7 +160,7 @@ class UshiGame:
             for j, c in self.graph[i]:
                 if dist[j] > dist[i] + c:
                     dist[j] = dist[i] + c
-        return "inf" if dist[t] == 10**18 else dist[t]
+        return dist
 
     def solve_minimize_dag_dp(self, s, t):
         value = self.solve_maximize_dag_dp(t, s)
