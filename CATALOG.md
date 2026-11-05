@@ -36,6 +36,8 @@
 | [union_find_linear.py](graph/union_find_linear.py) | x | https://zenn.dev/luna_moonlight/articles/d02d85532becd3 |
 | [union_find_weighted.py](graph/union_find_weighted.py) | o | 自作 / AI |
 | [union_find.py](graph/union_find.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/dsu.py |
+| [ushi_game.py](graph/ushi_game.py) | o | 自作 |
+| [ushi_game.md](graph/ushi_game.md) | o | 自作 / 差分制約のメモ |
 
 ## math
 
