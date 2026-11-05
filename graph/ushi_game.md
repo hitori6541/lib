@@ -194,3 +194,10 @@ Dijkstra版は重複辺を保持するヒープ実装なので、$M$ を使っ�
 - 厳密不等号を1ずらせる整数の問題か。
 - 負閉路を全体で確認する必要があるか。
 - 「矛盾して解なし」と「有界でない」を区別したか。
+  
+### Submit
+ABC404-G Specified Range Sums
+https://atcoder.jp/contests/abc404/submissions/80613777
+
+ABC216-G 01Sequence
+https://atcoder.jp/contests/abc216/submissions/80614548
