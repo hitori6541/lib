@@ -1,8 +1,10 @@
 # Source: https://github.com/hitori6541/lib
 # File: tree/euler_tour.py
+# Ref.: https://info.atcoder.jp/entry/algorithm_lectures/euler_tour_technique
+# 部分木クエリが解ける。LCAが求まる。
 
 class EulerTour:
-    """n >= 1、頂点番号 0..n-1 の無向木を扱う。
+    """n >= 1、頂点番号 0..n-1 の無向木を扱う。    
     入力が木であることは呼び出し側で保証する（辺数のみ検査）。
     add_edge() → build(root) → build_lca() の順で構築する。
     lca(), dist() を使わなければ build_lca() は不要。
