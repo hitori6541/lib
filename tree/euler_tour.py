@@ -27,7 +27,10 @@ class EulerTour:
 
     def __init__(self, n):
         assert n >= 1
-        self.n = n; self.g = [[] for _ in range(n)]; self.par = [-1] * n; self.depth = [-1] * n
+        self.n = n
+        self.g = [[] for _ in range(n)]
+        self.par = [-1] * n
+        self.depth = [-1] * n
         self.ee = []
         self.et0 = []   # 全辺ぶん 2N-1長
         self.et1 = []  # 行きがけのみ
