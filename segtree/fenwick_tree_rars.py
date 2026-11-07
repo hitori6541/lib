@@ -1,10 +1,10 @@
 # Source: https://github.com/hitori6541/lib
 # File: segtree/fenwick_tree_rars.py
 # Adapted from shakayami's ACL-for-python with AI assistance.
-# Original repository: https://github.com/shakayami/ACL-for-python
-# Original license: The Unlicense - https://github.com/shakayami/ACL-for-python/blob/master/LICENSE
+# shakayami: https://github.com/shakayami/ACL-for-python/blob/master/fenwicktree.py
 
 class RangeAddFenwickTree:
+    # 区間加算・区間和・一点取得・一点代入は各 O(log n)、初期化は O(n)。
     """
     0-indexed
     add(l, r, x): [l, r) に x を加算

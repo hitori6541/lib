@@ -60,6 +60,8 @@
 | [monoid4lazysegtree.md](segtree/monoid4lazysegtree.md) | o | |
 | [monoid4segtree.md](segtree/monoid4segtree.md) | o | 検証用の提出リンクは本文内 |
 | [fenwick_tree.py](segtree/fenwick_tree.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/fenwicktree.py |
+| [fenwick_tree_mod.py](segtree/fenwick_tree_mod.py) | o | shakayami (Unlicense、出典はコード内) |
+| [fenwick_tree_dual.py](segtree/fenwick_tree_dual.py) | o | fenwick_tree.py から分離（分割元の出典はコード内） |
 | [fenwick_tree_rars.py](segtree/fenwick_tree_rars.py) | o | shakayami由来・AI改変 (Unlicense、出典はコード内) |
 | [lazy_segtree.py](segtree/lazy_segtree.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/lazysegtree.py |
 | [persistent_segtree.py](segtree/persistent_segtree.py) | o | shakayami由来・AI改変 (Unlicense、出典はコード内) |
@@ -71,6 +73,7 @@
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
 | [imos.py](sequence/imos.py) | o | AI |
+| [tentou.py](sequence/tentou.py) | o | 転倒数 / fenwick_tree.py から分離 |
 | [lis.py](sequence/lis.py) | o | HUMAN |
 | [merge_sort.py](sequence/merge_sort.py) | o | AI |
 | [mo.py](sequence/mo.py) | x | https://atcoder.jp/contests/abc242/submissions/54739420 |
