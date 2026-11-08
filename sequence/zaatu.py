@@ -25,5 +25,3 @@ class Zaatu:
     def comp(self, LIST_):
         assert self.built
         return [self.r[v] for v in LIST_]
-
-
