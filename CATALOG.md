@@ -53,6 +53,12 @@
 | [comb.py](math/comb.py) | o | AI / 参考資料はコード内 |
 | [comb_table.py](math/comb_table.py) | o | 自作 |
 
+## optimization
+
+| ファイル | 公開 | 備考 |
+| --- | :---: | --- |
+| [monotone_cht.py](optimization/monotone_cht.py) | o | 自作 / AI / [提出（Frog 3）](https://atcoder.jp/contests/dp/submissions/80750378) |
+
 ## segtree
 
 | ファイル | 公開 | 備考 |
