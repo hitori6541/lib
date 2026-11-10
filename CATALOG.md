@@ -57,6 +57,7 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [li_chao_tree.py](optimization/li_chao_tree.py) | o | AI / 座標圧縮、直線・閉区間付き直線の追加と点での最小値クエリ |
 | [monotone_cht.py](optimization/monotone_cht.py) | o | 自作 / AI / [提出（Frog 3）](https://atcoder.jp/contests/dp/submissions/80750378) |
 
 ## segtree
