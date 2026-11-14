@@ -16,7 +16,6 @@ __pycache__/
 /math/fft.py
 /segtree/segtree_beats.py
 /sequence/mo.py
-/tree/cartesian_tree.py
 /tree/heavy_light_decomposition.py
 /tree/zenhoui_kidp.py
 

@@ -105,7 +105,7 @@
 | --- | :---: | --- |
 | [tree_diameter.py](tree/tree_diameter.py) | o | AI / [提出](https://atcoder.jp/contests/abc482/submissions/80535690) |
 | [find_jushin.py](tree/find_jushin.py) | o | 参考: https://atcoder.jp/contests/abc291/editorial/5840 |
-| [cartesian_tree.py](tree/cartesian_tree.py) | x | https://judge.yosupo.jp/submission/143878 |
+| [cartesian_tree.py](tree/cartesian_tree.py) | o | 自作 / 参考記事はコード内 / [提出](https://judge.yosupo.jp/submission/416980) |
 | [euler_tour.py](tree/euler_tour.py) | o | AI |
 | [heavy_light_decomposition.py](tree/heavy_light_decomposition.py) | x | https://judge.yosupo.jp/submission/213447 |
 | [prufer_code.py](tree/prufer_code.py) | o | 自作 / 参考資料はコード内 / [提出](https://yukicoder.me/submissions/1196599) |
