@@ -96,6 +96,8 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [next_positions.py](string/next_positions.py) | o | 自作 / 部分列の右向き遷移と両方向の走査での差分 / [提出](https://atcoder.jp/contests/tdpc/submissions/80870447) |
+| [next_table.py](string/next_table.py) | o | 自作 / 部分列の全遷移表と部分列判定 |
 | [rolling_hash.py](string/rolling_hash.py) | o | AI |
 | [z_algorithm.py](string/z_algorithm.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/acl_string.py |
 
