@@ -14,6 +14,18 @@
 | [trie.py](data_structure/trie.py) | o | AI |
 | [wavelet_matrix.py](data_structure/wavelet_matrix.py) | x | https://judge.yosupo.jp/submission/151722 |
 
+## fps
+
+| ファイル | 公開 | 備考 |
+| --- | :---: | --- |
+| [convolution_naive.py](fps/convolution_naive.py) | o | 自作 |
+| [div_naive.py](fps/div_naive.py) | o | AI / 密な係数リストによるFPS除算・逆数 |
+| [ntt.py](fps/ntt.py) | x | 旧math/fft.py / shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/convolution.py |
+| [div_sparse.py](fps/div_sparse.py) | o | fps_notes.mdから分離 / 疎な多項式による除算・逆数 |
+| [convolution_sparse.py](fps/convolution_sparse.py) | o | fps_notes.mdから分離 / 疎な多項式との積 |
+| [bostan_mori.py](fps/bostan_mori.py) | o | fps_notes.mdから分離 / 畳み込みは引数で指定 |
+| [fps_notes.md](fps/fps_notes.md) | o | 母関数メモ・FPS関数の利用方法と依存関係 |
+
 ## geometry
 
 | ファイル | 公開 | 備考 |
@@ -47,8 +59,6 @@
 | [crt.py](math/crt.py) | o | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/acl_math.py |
 | [eratos.py](math/eratos.py) | o | AI |
 | [ext_gcd.py](math/ext_gcd.py) | o | AI |
-| [fft.py](math/fft.py) | x | shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/convolution.py |
-| [fps_notes.md](math/fps_notes.md) | o | 母関数メモ・FPS補助関数 |
 | [matrix.py](math/matrix.py) | o | AI |
 | [comb.py](math/comb.py) | o | AI / 参考資料はコード内 |
 | [comb_table.py](math/comb_table.py) | o | 自作 |
