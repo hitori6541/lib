@@ -1,7 +1,7 @@
 # Source: https://github.com/hitori6541/lib
 # File: fps/convolution_naive.py
 
-def convolution_naive(a, b, mod=998244353, k=-1):
+def convolution_naive(a, b, k=-1, mod=998244353):
     """出力L項に対し時間O(L + min(nm, L**2))、追加空間O(L)の畳み込み。
     整数リストa, bの通常の畳み込みを正整数modで返す。入力は変更しない。
     n=len(a), m=len(b)。kは-1または0以上の項数（最高次数ではない）。

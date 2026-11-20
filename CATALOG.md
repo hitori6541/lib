@@ -18,6 +18,8 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [add.py](fps/add.py) | o | AI / 係数ごとの加算 |
+| [mul.py](fps/mul.py) | o | AI / 係数列の定数倍 |
 | [convolution_naive.py](fps/convolution_naive.py) | o | 自作 |
 | [div_naive.py](fps/div_naive.py) | o | AI / 密な係数リストによるFPS除算・逆数 |
 | [ntt.py](fps/ntt.py) | x | 旧math/fft.py / shakayami (Unlicense): https://github.com/shakayami/ACL-for-python/blob/master/convolution.py |

@@ -4,7 +4,7 @@
 from typing import Callable
 
 # conv = NTT(998244353).convolution
-def bostan_mori(P: list[int], Q: list[int], k: int, conv: Callable[[list[int], list[int]], list[int]], mod) -> int:
+def bostan_mori(P: list[int], Q: list[int], conv: Callable[[list[int], list[int]], list[int]], k: int, mod) -> int:
     """[x^k] P(x)/Q(x)。
     k >= 0、Qは非空。
     Q[0]はmodで逆元を持つこと。mod >= 2で、合成数も逆元があれば可。
@@ -12,7 +12,8 @@ def bostan_mori(P: list[int], Q: list[int], k: int, conv: Callable[[list[int], l
     m = max(len(P),len(Q))
     T(m)は長さO(m)の多項式の畳み込み1回の計算量。
     naiveを渡す時は↓
-    conv = lambda a, b: convolution_naive(a, b, 10**9+7)
+    conv = lambda a, b: convolution_naive(a, b, mod=10**9+7)
+    bostan_mori(P, Q, conv, k, 10**9+7)
     """
     def trim(a):
         while len(a) > 1 and a[-1] == 0: a.pop()

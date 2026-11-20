@@ -105,6 +105,8 @@ $$
 
 | ファイル / 関数 | 用途 |
 | --- | --- |
+| [add.py](add.py) / `add` | 係数ごとの加算。既定の出力長は2列の長さの最大値 |
+| [mul.py](mul.py) / `mul` | 係数列の定数倍。既定の出力長は入力の長さ |
 | [convolution_naive.py](convolution_naive.py) / `convolution_naive` | 密な係数列の畳み込み |
 | [div_naive.py](div_naive.py) / `div_naive` | 密な係数列のFPS除算。共通のx因子は自動除去 |
 | [ntt.py](ntt.py) / `NTT.convolution` | 素数modで高速畳み込み |
@@ -112,8 +114,9 @@ $$
 | [convolution_sparse.py](convolution_sparse.py) / `fps_sparse_prod` | 疎な多項式との積 |
 | [bostan_mori.py](bostan_mori.py) / `bostan_mori` | P/Qのk次係数。畳み込みもコピーして渡す |
 
-- 畳み込み・除算の長さ指定 `k`・`deg` は出力項数。既定値-1では、ナイーブ畳み込みは積の全長、`div_naive` は元の `len(f)` 項。
-- 疎な関数の `deg=-1` は、積が `len(f)+max(g)`、除算が `max(g)+1` 項。gは `{指数: 係数}` の辞書。
+- 長さ指定のある関数は末尾が `k=-1, mod=998244353`。kは出力項数で、-1ではナイーブ畳み込みは積の全長、`div_naive` は元の `len(f)` 項。
+- 疎な関数の `k=-1` は、積が `len(f)+max(g)`、除算が `max(g)+1` 項。gは `{指数: 係数}` の辞書。
+- Bostan–Moriは `bostan_mori(P, Q, conv, k, mod)`。kは取り出す次数。
 - 除算は分母定数項がmodで可逆であること。`div_naive` は共通のx因子を除去してから判定する。分子を `[1]` にすれば逆数。
 - NTTの高速経路は、積の項数以上の最小の2冪zが `MOD-1` を割り切ること。998244353なら `z <= 2**23`。Bostan–Moriの中間積も同様。
 
@@ -125,18 +128,24 @@ $$
 # Source: https://github.com/hitori6541/lib
 # File: fps/fps_notes.md
 
+# add.py: 長さが異なる係数列の加算
+assert add([1, 2], [3, 4, 5]) == [4, 6, 5]
+
+# mul.py: 定数倍
+assert mul([1, 2, 3], 3) == [3, 6, 9]
+
 # div_naive.py: 逆数、共通のx因子がある除算
 assert div_naive([1], [1, -1], k=5) == [1]*5
 assert div_naive([0, 0, 1, 1], [0, 1, 0, 1], k=4, mod=7) == [0, 1, 1, 6]
 
 # div_sparse.py: 疎な分母による除算
-assert fps_sparse_inv([1], {0: 1, 1: -1}, deg=5) == [1]*5
+assert fps_sparse_inv([1], {0: 1, 1: -1}, k=5) == [1]*5
 
 # bostan_mori.py + convolution_naive.py: Fibonacci数
 mod = 998244353
-conv = lambda a, b: convolution_naive(a, b, mod)
+conv = lambda a, b: convolution_naive(a, b, mod=mod)
 # conv = NTT(mod).convolution  # ntt.pyを使う場合
-assert bostan_mori([0, 1], [1, mod-1, mod-1], 10, conv, mod) == 55
+assert bostan_mori([0, 1], [1, mod-1, mod-1], conv, 10, mod) == 55
 ```
 
 ## 未実装の候補
