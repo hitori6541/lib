@@ -117,6 +117,7 @@
 
 | ファイル | 公開 | 備考 |
 | --- | :---: | --- |
+| [tree.py](tree/tree.py) | o | 自作 |
 | [tree_diameter.py](tree/tree_diameter.py) | o | AI / [提出](https://atcoder.jp/contests/abc482/submissions/80535690) |
 | [find_jushin.py](tree/find_jushin.py) | o | 参考: https://atcoder.jp/contests/abc291/editorial/5840 |
 | [cartesian_tree.py](tree/cartesian_tree.py) | o | 自作 / 参考記事はコード内 / [提出](https://judge.yosupo.jp/submission/416980) |

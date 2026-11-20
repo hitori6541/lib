@@ -1,3 +1,5 @@
+# Source: https://github.com/hitori6541/lib
+# File: tree/tree.py
 # 木DP想定の雑Tree
 
 class Tree:
