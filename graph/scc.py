@@ -7,7 +7,6 @@ class SCC:
     """
     0-indexed 有向グラフの強連結成分分解。
     非再帰Tarjan法。O(N + M)。
-
     add_edge(u, v) -> build()
 
     group_num : SCCの個数
@@ -16,7 +15,6 @@ class SCC:
 
     SCC番号はトポロジカル順。
     異なるSCC間の辺 u -> v について ids[u] < ids[v]。
-
     build_dag() は必要な場合のみ呼び出す。
     """
 
@@ -24,12 +22,14 @@ class SCC:
         self.n = n
         self.edges = []
         self.adj = [[] for _ in range(n)]
+
         self.group_num = 0
         self.ids = [-1] * n
         self.groups = []
-        self.dag = None
-        self.rdag = None
         self._built = False
+
+        self.dag = None
+        self.rdag = None        
 
     def add_edge(self, u, v):
         assert not self._built
