@@ -20,7 +20,7 @@ class Tree:
         self.adj[b].append(a)
         self.edges.append((a,b))
 
-    def bfs(self, root=0):
+    def build(self, root=0):
         self.size = None
         n = self.n
         assert len(self.edges)==n-1
